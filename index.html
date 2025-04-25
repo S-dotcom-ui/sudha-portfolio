@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vaddi Sudha | Technical Recruiter</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    .home {
+      background: linear-gradient(to right, #2c3e50, #34495e);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    .home h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    .home nav a {
+      margin: 0 15px;
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    .home nav a:hover {
+      color: #f39c12;
+    }
+    .hero {
+      padding: 60px 20px;
+      background: #ecf0f1;
+      text-align: center;
+      animation: fadeIn 1s ease-in;
+    }
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .projects {
+      padding: 60px 20px;
+      background: #ffffff;
+      text-align: center;
+    }
+    .projects h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+    .project-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+    .project-card {
+      background: #f0f0f0;
+      border-radius: 12px;
+      padding: 25px;
+      width: 260px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      text-align: left;
+      animation: fadeInUp 1s ease forwards;
+    }
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+    }
+    .project-card i {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #2980b9;
+    }
+
+    /* Contact Form */
+    .contact-section {
+      background-color: #ecf0f1;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .contact-section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    .contact-form {
+      max-width: 500px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .contact-form input, .contact-form textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    .contact-form textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+    .contact-form button {
+      padding: 12px;
+      background-color: #2980b9;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .contact-form button:hover {
+      background-color: #1c5f8a;
+    }
+
+    .footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      .project-card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="home">
+    <h1>Vaddi Sudha</h1>
+    <nav>
+      <a href="#hero">About</a>
+      <a href="#projects">Highlights</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <h2><i class="fas fa-user-tie"></i> Technical Recruiter | Talent Specialist</h2>
+    <p>
+      I’m a results-driven Technical Recruiter with 1 year and 8 months of experience in IT & BPO recruitment. 
+      Skilled in sourcing, screening, and hiring top-tier tech talent. My background in Computer Science, combined 
+      with a strong grasp of technologies like Java, HTML/CSS, and React, allows me to bridge the gap between developers and decision-makers.
+    </p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2><i class="fas fa-award"></i> Career Highlights</h2>
+    <div class="project-list">
+      <div class="project-card">
+        <i class="fas fa-briefcase"></i>
+        <h3>Hi-TECH-MS</h3>
+        <p>Recruited top IT professionals across full-stack and backend roles. Drove hiring success through workshops and efficient screening methods.</p>
+      </div>
+      <div class="project-card">
+        <i class="fas fa-code"></i>
+        <h3>Technical Skillset</h3>
+        <p>Strong understanding of Java, HTML/CSS, and React. Attended AI tools & Excel automation workshops for better sourcing strategies.</p>
+      </div>
+      <div class="project-card">
+        <i class="fas fa-user-check"></i>
+        <h3>Soft Skills</h3>
+        <p>Excellent communication, teamwork, and relationship building with both clients and candidates.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section id="contact" class="contact-section">
+    <h2><i class="fas fa-envelope-open-text"></i> Get in Touch</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer" class="footer">
+    <p>📍 Vizianagaram, Andhra Pradesh | 📞 +91 6303460887 | 📧 yalagadasudha@gmail.com</p>
+    <p>&copy; 2025 Vaddi Sudha. Made with 💼 and ☕</p>
+  </footer>
+
+</body>
+</html>
